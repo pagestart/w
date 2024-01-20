@@ -3,26 +3,13 @@ body {
   font-family: 'Cormorant Garamond', serif;
   text-align: center;   
   color: #663d15; 
-  font-size: 22px;
+  font-size: 1.5em;
 }
 
 a {
   color: #663d15; 
 }
 
-@font-face {
-    font-family: 'Anthellia';
-    src: url('fonts/Anthellia.otf');
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'LP';
-    src: url('fonts/Lovely-Pretty.ttf');
-    font-weight: normal;
-    font-style: normal;
-}
 
 @font-face {
     font-family: 'Clandie Rain';
@@ -31,31 +18,17 @@ a {
     font-style: normal;
 }
 
-.header {
-  position: relative;
-  text-align: center;  
-}
-
-.header img {
-  display: block;
+.main-img {
+  max-width: 100%;
   height: auto;
-  max-height: 98vh;
-  width: 100%;
-  object-fit: cover;   
-  border-radius: 10px;
- 
 }
 
 .names {
-  font-size: 240px;
+  font-size: 10em;
   line-height: 0.5;
-  margin-top: 70px;
-  margin-bottom: 70px;
+  margin-top: 100px;
+  margin-bottom: 120px;
   font-family: 'Clandie Rain', cursive;
-}
-
-.date {
-  font-variant: small-caps; 
 }
 
 .date-table {
@@ -66,29 +39,22 @@ a {
 
 .date-table td {
   width: 100px;
-  padding: 10px;
-  font-size: 30px;
-}
-
-.date-table .day {
-  font-size: 80px;
+  padding: 0.6em;
+  font-size: 1.3em;
 }
 
 .time {
-  font-size: 30px;
+  font-size: 1.3em;
 }
 
 
 .focus {
   font-variant: small-caps; 
-  font-size: 30px;
+  font-size: 1.3em;
 }
 
 .details {
-  padding-right: 30px;   
-  padding-left: 30px;   
-  padding-top: 30px;
-  padding-bottom: 50px;
+  padding: 30px 30px 30px 30px;
   background-color: white;
   box-shadow: 3px 5px 5px #888888;
   max-width: 650px;
@@ -99,35 +65,44 @@ a {
   line-height: 1.5;
 }
 
-.main-img {
-  max-width: 100%;
-  height: auto;  
-}
-
-.bottom-img {
-  max-width: 100%;
-  height: auto;  
-}
-
-@media (max-width: 1000px) {
-  .details {
-    padding-right: 20px;   
-    padding-left: 20px;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    margin-top: 0px;
-    margin-bottom: 0px;
-    max-width: 100%;
-  }
-}
-
-.invite {
-  font-style: italic;
-}
-
 .separator {
-  width: 250px;
+  width: 12em;
   height: auto;
   margin: 20px auto;
   display: block;
+}
+
+.location-icon {
+  text-decoration: none; 
+}
+
+
+@media (max-width: 1000px) {
+  .details {
+    max-width: 1000px;
+    padding: 20px 20px 20px 20px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+  .names {
+    font-size: 16em;
+  }
+
+  .date-table td {
+    width: 150px;
+    font-size: 2em;
+  }
+
+  .time {
+    font-size: 2em;
+  }
+
+
+  .focus {
+    font-size: 2em;
+  }
+
+  .separator {
+    width: 18em;
+  }
 }
