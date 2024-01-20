@@ -1,0 +1,133 @@
+body {
+  background-color: #f7e8d9; 
+  font-family: 'Cormorant Garamond', serif;
+  text-align: center;   
+  color: #663d15; 
+  font-size: 22px;
+}
+
+a {
+  color: #663d15; 
+}
+
+@font-face {
+    font-family: 'Anthellia';
+    src: url('fonts/Anthellia.otf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'LP';
+    src: url('fonts/Lovely-Pretty.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Clandie Rain';
+    src: url('fonts/Clandie-Rain.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.header {
+  position: relative;
+  text-align: center;  
+}
+
+.header img {
+  display: block;
+  height: auto;
+  max-height: 98vh;
+  width: 100%;
+  object-fit: cover;   
+  border-radius: 10px;
+ 
+}
+
+.names {
+  font-size: 240px;
+  line-height: 0.5;
+  margin-top: 70px;
+  margin-bottom: 70px;
+  font-family: 'Clandie Rain', cursive;
+}
+
+.date {
+  font-variant: small-caps; 
+}
+
+.date-table {
+  margin-left: auto;
+  margin-right: auto;
+  table-layout: fixed;
+}
+
+.date-table td {
+  width: 100px;
+  padding: 10px;
+  font-size: 30px;
+}
+
+.date-table .day {
+  font-size: 80px;
+}
+
+.time {
+  font-size: 30px;
+}
+
+
+.focus {
+  font-variant: small-caps; 
+  font-size: 30px;
+}
+
+.details {
+  padding-right: 30px;   
+  padding-left: 30px;   
+  padding-top: 30px;
+  padding-bottom: 50px;
+  background-color: white;
+  box-shadow: 3px 5px 5px #888888;
+  max-width: 650px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  line-height: 1.5;
+}
+
+.main-img {
+  max-width: 100%;
+  height: auto;  
+}
+
+.bottom-img {
+  max-width: 100%;
+  height: auto;  
+}
+
+@media (max-width: 1000px) {
+  .details {
+    padding-right: 20px;   
+    padding-left: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    max-width: 100%;
+  }
+}
+
+.invite {
+  font-style: italic;
+}
+
+.separator {
+  width: 250px;
+  height: auto;
+  margin: 20px auto;
+  display: block;
+}
